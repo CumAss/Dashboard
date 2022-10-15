@@ -51,3 +51,80 @@ main {
     width: 30%;
     
 }
+
+.container {
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.search {
+    display: flex;
+    align-items: stretch;
+}
+
+.search-input {
+    background-color: aliceblue;
+    padding: 10px 20px;
+}
+
+.search-input .icon {
+    color: rgb(142, 142, 142);
+}
+
+.search-input input {
+    border: none;
+    background: none;
+    width: 300px;
+}
+
+.search-input input:focus {
+    outline: none;
+
+}
+
+.search-btn {
+    background-color: rgb(11, 55, 230);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.5s 0s ease;
+}
+
+.search-btn:hover {
+    background-color: rgb(13, 38, 135);
+    cursor: pointer;
+}
+
+.search-btn:active {
+    transform: scaleY(0.95);
+}
+
+.item {
+    position: relative;
+    padding: 10PX;
+    border-radius: 50%;
+    transition: background-color 0.5s 0s ease;
+}
+
+.badge {
+    background-color: crimson;
+    width: 5px;
+    position: absolute;
+    height: 5px;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+}
+
+.item:hover {
+    background-color: azure;
+}
+
