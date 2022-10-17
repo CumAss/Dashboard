@@ -26,7 +26,9 @@ aside {
     background-color: white;
     width: 80px;
     height: 100vh;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 section {
@@ -54,15 +56,14 @@ main {
 
 .container {
     padding: 0px 30px;
-    display: flex;
-    align-items: center;
+
 }
 
 .header-content {
     flex: 1;
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
 }
 
 .search {
@@ -128,3 +129,89 @@ main {
     background-color: azure;
 }
 
+.nav {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.nav-item {
+    padding: 20px;
+    text-align: center;
+    font-size: 21px;
+    color: #b4b4b4;
+    transition: all 0.5s 0s ease;
+}
+
+.nav-item:hover {
+    color: rgb(17, 55, 203);
+    cursor: pointer;
+    background-color: #f8f8f8;
+}
+
+.nav-item.active {
+    color: rgb(71, 106, 220);
+}
+
+.card {
+    display: flex;
+    padding: 5px 10px;
+    flex-direction: column;
+    background-color: white;
+    gap: 15px;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+}
+
+.card-icon {
+    padding: 10px;
+    font-size: 32px;
+    color: rgb(21, 53, 238);
+    background-color: rgb(150, 178, 242);
+}
+
+.card-tittle {
+    color: #b4b4b4;
+
+}
+
+.card-value {
+    font-size: 46px;
+}
+
+.card hr {
+    width: 100%;
+    border: 1px solid #b4b4b47a;
+}
+
+.card-footer {
+    color: #b4b4b4;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card::after {
+    content: "";
+    width: 100px;
+    height: 80px;
+    background-image: url(./assets/stonks.img);
+    background-size: cover;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.card-footer a {
+    color: rgb(21, 53, 238);
+}
+
+.card.green .card-icon {
+    background: rgba(153, 205, 50, 0.178);
+    color: yellowgreen;
+}
